@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchFlight.css">
+    <title>Search a Flight</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Search a Flight</h2>
+        <div class="search-flight">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure location">
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination location">
+
+            <button type="submit" onclick="searchFlights()">Search</button>
+        </div>
+        
+        <h3>Available Flights:</h3>
+        <select class="flightList">
+            <option value="flight1">flight1</option>
+            <option value="flight2">flight2</option>
+            <option value="flight3">flight3</option>
+        </select>
+    </div>
+
+    <script src="searchFlight.js"></script>
+</body>
+</html>

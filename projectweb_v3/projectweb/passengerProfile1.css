@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/view-3d-airplane-with-wings-engine.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2.5px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 300px; /* Adjusted width */
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #060606;
+  }
+  
+  .passenger-info,
+  .passenger-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #180672;
+    font-weight: bold;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  a {
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+    margin-bottom: 16px;
+  }
+  
+  input,
+  button {
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #1d0467;
+    color: #fff;
+    border: none;
+  }
+  

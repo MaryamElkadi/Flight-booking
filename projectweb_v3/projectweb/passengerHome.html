@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body><div class="container">
+    <img src="images/airplane.png" class="icon">
+    <h3 class="Flight">Flighty</h3>
+
+    <ul class="menu">
+        <li class="menu-item"></li>
+        <li class="menu-item"><a href="" >Flights </a></li>
+        <li class="menu-item"><a href="passengerProfile.html" >Profile</a></li>
+        <li class="menu-item"><a href="message.html" >Messages</a></li>
+        <li class="menu-item"><a href="" >Search</a></li>
+        <li class="menu-item"><button><a href="login.html"></a>Login</button></li>
+        <li class="menu-item"><button><a href="register.html">SignUp</a></button></li>     
+    </ul>
+
+    <div class="main">
+        <h1><b>Hello Passenger</b></h1>
+    </div>
+</div>
+
+<div class="position">
+    <div class="middel">
+        <div class="rounded">
+            <div class="alignCenter">
+                <div class="form">
+
+                    <label class="label">Name</label>
+                    <input type="text" class="textbox" placeholder="Enter name">
+
+                    <label class="label">Email</label>
+                    <input type="text" class="textbox" placeholder="Enter Email">
+
+                    <label class="label">Image</label>
+                    <input type="file" class="datebox">
+
+                    <label class="label">Tel</label>
+                    <input type="text" class="datebox">
+
+                    <label class="label">completed flights</label>
+                    <select class="selectbox">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="firstClass">First Class</option>
+                    </select>
+                    <label class="label">Current flights</label>
+                    <select class="selectbox">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="firstClass">First Class</option>
+                    </select>
+
+                    <button class="search-button"><a href="passengerProfile1.html">Profile</a></button>
+                    <button type="submit">Search a flight</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the menu item for Flights
+        const flightsMenuItem = document.querySelector('.menu-item a[href=""]');
+
+        // Get the flight content
+        const flightContent = document.getElementById('flightContent');
+
+        // Add a click event listener to the Flights menu item
+        flightsMenuItem.addEventListener('click', function (event) {
+            // Toggle the display of the flight content
+            flightContent.style.display = flightContent.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Add a mouseover event listener to the Flights menu item
+        flightsMenuItem.addEventListener('mouseover', function () {
+            // Display the flight content when hovering
+            flightContent.style.display = 'block';
+        });
+
+        // Add a mouseout event listener to the Flights menu item
+        flightsMenuItem.addEventListener('mouseout', function () {
+            // Hide the flight content when not hovering
+            flightContent.style.display = 'none';
+        });
+    });
+</script>
+</html>

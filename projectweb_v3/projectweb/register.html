@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="register.php" method="post" onsubmit="openAdditionalInfo();">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="company">Company</option>
+                <option value="passenger">Passenger</option>
+            </select>
+
+            <button type="submit">Register</button>
+            <p>Do you Have an Account? <a href="login.html">Login</a></p>
+
+        </form>
+    </div>
+
+    <script>
+        function openAdditionalInfo() {
+            //window.open('additional_info.html', '_blank');
+            window.open('home.html', '_blank');
+        }
+    </script>
+</body>
+</html>
